@@ -1,0 +1,5 @@
+Try with better dataset.
+Try with more than 1 class.
+Try with masked R-CNN.
+Quality loss when extracting frames and putting them back together.
+Rework/rewrite vid-detect.py to be more efficient and also merge create_vid2.py to it, so that less scripts are run.

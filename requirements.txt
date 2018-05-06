@@ -1,0 +1,7 @@
+pip install tensorflow
+pip install tensorflow-gpu
+pip install pillow
+pip install lxml
+
+protoc: https://github.com/google/protobuf/releases
+(I did set protoc to my PATH Environmental Variable, if you don't, you'll have to call it before training the model)

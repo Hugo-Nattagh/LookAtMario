@@ -25,7 +25,14 @@ flags.DEFINE_string('output_path', '', 'Path to output TFRecord')
 FLAGS = flags.FLAGS
 
 
+# Get "train" or "test"
+apath = FLAGS.output_path.replace(".", " ")
+bpath = os.path.basename(apath).split()
+cpath = bpath[0]
+
 # TO-DO replace this with label map
+
+
 def class_text_to_int(row_label):
     if row_label == 'Mario':
         return 1
@@ -82,7 +89,7 @@ def create_tf_example(group, path):
 
 def main(_):
     writer = tf.python_io.TFRecordWriter(FLAGS.output_path)
-    path = os.path.join(os.getcwd(), 'labeled/test') # Switch between train and test for each case!!!!!
+    path = os.path.join(os.getcwd(), 'labeled/' + cpath)
     examples = pd.read_csv(FLAGS.csv_input)
     grouped = split(examples, 'filename')
     for group in grouped:
