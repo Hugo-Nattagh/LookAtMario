@@ -10,7 +10,7 @@ I used **TensorFlow's faster R-CNN**. Faster R-CNN is a 2 step process for each 
 First, the region proposal: all potential regions of interest (ROI) are selected with bounding boxes.  
 Then, features inside of those boxes are analyzed to perform classification. 
 
-<a href="https://giphy.com/gifs/xVuUupHd4cfOZe4Vyu/html5"><img src="https://media.giphy.com/media/xVuUupHd4cfOZe4Vyu/giphy.gif"></a>
+![](https://github.com/Hugo-Nattagh/LookAtMario/blob/master/mario_gif.gif)
 
 #### Thank you
 
